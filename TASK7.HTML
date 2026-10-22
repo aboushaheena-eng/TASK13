@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple business rules</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div clase="container">
+      <h2>Our Order</h2>
+      <form id="form-order" novalidate>
+        <div class="input-group">
+          <lable for="name">Name:</lable>
+          <input type="text" id="name" placeholder="Enter Your Name" />
+          <span id="error-name"></span>
+        </div>
+        <div class="input-group">
+          <lable for="phone">Phone:</lable>
+          <input type="number" id="phone" placeholder="01xxxxxxxxx" />
+          <span id="error-phone"></span>
+        </div>
+        <div class="input-group">
+          <lable for="product">Product:</lable>
+          <select id="product">
+            <option value="">-- Select a Product --</option>
+            <option value="Espresso" price="45">Espresso — 45 EGP</option>
+            <option value="Latte" price="65">Latte — 65 EGP</option>
+            <option value="Croissant" price="40">Croissant — 40 EGP</option>
+          </select>
+          <span id="error-product"></span>
+        </div>
+        <div class="input-group">
+          <lable for="Quantity">Quantity:</lable>
+          <input type="number" id="Quantity" placeholder="1 to 10" />
+          <span id="error-quantity"></span>
+        </div>
+        <button id="btn-ok">Save</button>
+      </form>
+      <div class="section-show">
+        <h3>Order</h3>
+        <div id="order-show">
+        
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
